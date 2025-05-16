@@ -5,7 +5,7 @@
 	"scripts": {
 		"build": "tsc",
 		"start": "cross-env APP_VERSION=$npm_package_version npm run build && node dist/index.js",
-		"dev": "cross-env APP_VERSION=$npm_package_version nodemon --watch src/**/*.ts --exec ts-node src/index.ts"
+		"dev": "cross-env APP_VERSION=$npm_package_version nodemon --exec ts-node src/index.ts"
 	},
 	"keywords": [],
 	"author": "",

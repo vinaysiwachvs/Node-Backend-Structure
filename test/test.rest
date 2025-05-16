@@ -1,0 +1,27 @@
+@url = https://localhost/8000
+
+## GET all the samples
+GET {{url}}/api/samples 
+
+## GET a sample by id
+GET {{url}}/api/samples/1
+
+## POST a new sample
+POST {{url}}/api/samples
+Content-Type: application/json
+{
+    "name": "Sample 1",
+    "description": "This is a sample description"
+}
+
+## PUT to update a sample
+PUT {{url}}/api/samples/1
+Content-Type: application/json
+{
+    "name": "Updated Sample 1",
+    "description": "This is an updated sample description"
+}
+
+## DELETE a sample
+DELETE {{url}}/api/samples/1
+
